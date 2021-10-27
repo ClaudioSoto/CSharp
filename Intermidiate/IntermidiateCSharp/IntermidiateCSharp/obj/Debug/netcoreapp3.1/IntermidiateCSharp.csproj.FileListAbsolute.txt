@@ -1,0 +1,13 @@
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\bin\Debug\netcoreapp3.1\IntermidiateCSharp.exe
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\bin\Debug\netcoreapp3.1\IntermidiateCSharp.deps.json
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\bin\Debug\netcoreapp3.1\IntermidiateCSharp.runtimeconfig.json
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\bin\Debug\netcoreapp3.1\IntermidiateCSharp.runtimeconfig.dev.json
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\bin\Debug\netcoreapp3.1\IntermidiateCSharp.dll
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\bin\Debug\netcoreapp3.1\IntermidiateCSharp.pdb
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\obj\Debug\netcoreapp3.1\IntermidiateCSharp.csproj.AssemblyReference.cache
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\obj\Debug\netcoreapp3.1\IntermidiateCSharp.AssemblyInfoInputs.cache
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\obj\Debug\netcoreapp3.1\IntermidiateCSharp.AssemblyInfo.cs
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\obj\Debug\netcoreapp3.1\IntermidiateCSharp.csproj.CoreCompileInputs.cache
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\obj\Debug\netcoreapp3.1\IntermidiateCSharp.dll
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\obj\Debug\netcoreapp3.1\IntermidiateCSharp.pdb
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Intermidiate\IntermidiateCSharp\IntermidiateCSharp\obj\Debug\netcoreapp3.1\IntermidiateCSharp.genruntimeconfig.cache
