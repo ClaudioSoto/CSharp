@@ -1,9 +1,9 @@
-﻿using IntermidiateCSharp.EjerciciosP1;
-using IntermidiateCSharp.EjerciciosP3;
+﻿using IntermidiateCSharp.EjerciciosP3;
+using IntermidiateCSharp.EjerciciosP4;
+using IntermidiateCSharp.Interfaces;
 using IntermidiateCSharp.Polymorphism;
 using System;
-using System.Collections.Generic;
-using System.Threading;
+
 
 namespace IntermidiateCSharp
 {
@@ -133,6 +133,18 @@ namespace IntermidiateCSharp
 
             command = new DbCommand(sCon, "SELECT * FROM USERS");
             command.Execute();
+
+            //INTERFACES
+            var dbMigra = new DbMig(new ConsoleLogger());
+            dbMigra.Migrate();
+
+            //EJERCICIOS PARTE 4
+            //INTERFACES
+            var engine = new Engine();
+            engine.RegisterActivity(new Upload());
+            engine.RegisterActivity(new EncodingService());
+            engine.RegisterActivity(new SendEmail());
+            engine.StarWorkflow();
 
 
 

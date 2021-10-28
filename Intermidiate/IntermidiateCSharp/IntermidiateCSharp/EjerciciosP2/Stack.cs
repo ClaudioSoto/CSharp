@@ -8,7 +8,7 @@ namespace IntermidiateCSharp
     {
         public class Stack
         {
-            public List<int> S = new List<int>();
+            private List<object> _S = new List<object>();
 
             public Stack()
             {
@@ -17,37 +17,24 @@ namespace IntermidiateCSharp
 
             public void Push(object value)
             {
-                var val = (int)value;
-                if (val != null)
-                {
-                    S.Add(val);
-                }
-                else
-                {
+                if (value == null)
                     throw new InvalidOperationException();
-                }
-
+                _S.Add(value);
             }
 
             public int Pop()
             {
-                int l = S.Count;
+                int l = _S.Count;
                 if (l <= 0)
-                {
                     throw new InvalidOperationException();
-                }
-                else
-                {
-                    int last = l - 1;
-                    int lastValue = S[last];
-                    S.RemoveAt(last);
-                    return lastValue;
-                }
+                int last = l - 1;
+                int lastValue = (int)_S[last];
+                _S.RemoveAt(last);
+                return lastValue;
             }
-
             public void Clear()
             {
-                S.Clear();
+                _S.Clear();
             }
         }
     }

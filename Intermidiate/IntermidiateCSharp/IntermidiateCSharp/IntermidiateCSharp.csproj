@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Interfaces\DbMigrator.cs" />
+    <Compile Remove="Interfaces\DbMigrator2.cs" />
+  </ItemGroup>
+
 </Project>
