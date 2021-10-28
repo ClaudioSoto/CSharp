@@ -1,4 +1,6 @@
 ﻿using IntermidiateCSharp.EjerciciosP1;
+using IntermidiateCSharp.EjerciciosP3;
+using IntermidiateCSharp.Polymorphism;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -99,6 +101,39 @@ namespace IntermidiateCSharp
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
+
+            //POLYMORPHISM
+            //OVERRIDE ES CUANDO 2 O MAS CLASES HEREDAN DE UNA CLASE PADRE Y NECESITAN IMPLEMENTAR 
+            //EL MISMO METODO DE DIFERENTES FORMAS
+            Cuadrado cuadrado = new Cuadrado();
+            Circulo circulo = new Circulo();
+
+            cuadrado.Draw();
+            circulo.Draw();
+
+            cuadrado.Area();
+            circulo.Area();
+
+            //SEALED CLASSES PREVENTS DERIVATION OR INHERITANCE OF CLASESSES AND OVERRIDING METHODS
+            //SI PONES PUBLIC SEALED CLASS NOMBRECLASE, NINGUNA CLASE VA A PODER HEREDARLA
+            //SI PONES PUBLIC SEALED VOID NOMBREMETODO, NINGUNA CLASE VA A PODER HACER OVERRIDE DE ESE METODO
+            //NUNCA SE UTILIZA EN LA VIDA REAL
+
+            //EJERCICIOS PARTE 3
+            //CONNECTION
+            OracleConnection oCon = new OracleConnection("OracleODBS");
+            SqlConnection sCon = new SqlConnection("SQLODBS");
+            oCon.Connect();
+            oCon.Disconnect();
+            sCon.Connect();
+            sCon.Disconnect();
+
+            DbCommand command = new DbCommand(oCon, "SELECT * FORM USERS");
+            command.Execute();
+
+            command = new DbCommand(sCon, "SELECT * FROM USERS");
+            command.Execute();
+
 
 
             Console.ReadKey();
