@@ -1,0 +1,13 @@
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\bin\Debug\netcoreapp3.1\BasicCSharp.exe
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\bin\Debug\netcoreapp3.1\BasicCSharp.deps.json
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\bin\Debug\netcoreapp3.1\BasicCSharp.runtimeconfig.json
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\bin\Debug\netcoreapp3.1\BasicCSharp.runtimeconfig.dev.json
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\bin\Debug\netcoreapp3.1\BasicCSharp.dll
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\bin\Debug\netcoreapp3.1\BasicCSharp.pdb
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\obj\Debug\netcoreapp3.1\BasicCSharp.csproj.AssemblyReference.cache
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\obj\Debug\netcoreapp3.1\BasicCSharp.AssemblyInfoInputs.cache
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\obj\Debug\netcoreapp3.1\BasicCSharp.AssemblyInfo.cs
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\obj\Debug\netcoreapp3.1\BasicCSharp.csproj.CoreCompileInputs.cache
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\obj\Debug\netcoreapp3.1\BasicCSharp.dll
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\obj\Debug\netcoreapp3.1\BasicCSharp.pdb
+C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\obj\Debug\netcoreapp3.1\BasicCSharp.genruntimeconfig.cache
