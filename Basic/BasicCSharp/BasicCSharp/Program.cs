@@ -1,4 +1,8 @@
-﻿using System;
+﻿using BasicCSharp.Ejercicios1;
+using BasicCSharp.Ejercicios2;
+using BasicCSharp.Ejercicios3;
+using System;
+using System.IO;
 
 namespace BasicCSharp
 {
@@ -59,6 +63,123 @@ namespace BasicCSharp
             var shippingMethod = ShippingMethod.Express;
             Console.WriteLine(shippingMethod);
             Console.WriteLine((int)shippingMethod);
+
+            //EJERCICIOS1
+            var ejercicios1 = new Ejercicios();
+            Console.WriteLine(ejercicios1.ValidNumber(0));
+            Console.WriteLine(ejercicios1.ValidNumber(1));
+            Console.WriteLine(ejercicios1.ValidNumber(10));
+
+
+            Console.WriteLine(ejercicios1.ReturnMax(1,0));
+            Console.WriteLine(ejercicios1.ReturnMax(0, 1));
+            Console.WriteLine(ejercicios1.ReturnMax(0, 0));
+
+            Console.WriteLine(ejercicios1.TypeOfPhoto(1,2));
+            Console.WriteLine(ejercicios1.TypeOfPhoto(2, 1));
+            Console.WriteLine(ejercicios1.TypeOfPhoto(1, 1));
+
+            Console.WriteLine(ejercicios1.SpeedCamera(50, 49));
+            Console.WriteLine(ejercicios1.SpeedCamera(50, 50));
+            Console.WriteLine(ejercicios1.SpeedCamera(50, 55));
+            Console.WriteLine(ejercicios1.SpeedCamera(50, 300));
+
+            //ITERATION AND LOOPS
+            int [] arrayNumbers = { 1,2,3};
+            int len = arrayNumbers.Length;
+            for(int i = 0; i<len; i++)
+            {
+                Console.WriteLine(arrayNumbers[i]);
+            }
+
+            foreach(var num in arrayNumbers)
+            {
+                Console.WriteLine(num);
+            }
+
+            int j = 0;
+            while(j < len)
+            {
+                Console.WriteLine(arrayNumbers[j]);
+                j++;
+            }
+
+            //EJERCICIOS2
+            /*
+            var ejecicios2 = new EjerciciosTwo();
+            ejecicios2.DivisibleIn3();
+            ejecicios2.UserSum();
+            Console.WriteLine(ejecicios2.Factorial(5));
+            Console.WriteLine(ejecicios2.RandomGame());
+            */
+
+            //EJERCICIOS3
+            /*
+            var ejercicios3 = new EjerciciosThree();
+            ejercicios3.FacebookFriends();
+            ejercicios3.ReverseName("claudio soto ayala");
+            ejercicios3.UniqueNumbers();
+            ejercicios3.CommaList("1,2,3,4,5");
+            */
+
+            //DATETIME
+            var dateTime = new DateTime(2015, 1, 1);
+            var now = DateTime.Now;
+
+            Console.WriteLine(now.Year);
+            Console.WriteLine(now.Day);
+            Console.WriteLine(now.Month);
+
+            Console.WriteLine(now.ToString("yyyy-dd-MM"));
+
+            //TIMESPAN
+            var timeSpan = new TimeSpan(1,45,20);
+            Console.WriteLine("Minutos: " + timeSpan.Minutes);
+            Console.WriteLine("Minutos totales: " + timeSpan.TotalMinutes);
+
+            //FILES AND DIRECTORIES
+            var pathOrigen = @"C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\Files\entrenamiento.txt";
+            var pathDestino = @"C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\Files\destino.txt";
+            
+            if (File.Exists(pathDestino))
+            {
+                File.Delete(pathDestino);
+            }
+            File.Copy(pathOrigen, pathDestino);
+            var content = File.ReadAllText(pathDestino);
+            Console.WriteLine(content);
+
+            //DIRECTORY
+            var pathDirectoryOrigen = @"C:\Users\claudio.sotoayala\Desktop\Misc\C#\Basic\BasicCSharp\BasicCSharp\Files\Test\Test2";
+            if (!Directory.Exists(pathDirectoryOrigen))
+            {
+                Directory.CreateDirectory(pathDirectoryOrigen);
+            }
+            
+            for(int i=0; i<5; i++)
+            {
+                string name = string.Format(@"\test{0}.txt", i.ToString());
+                string pathFilesDestiny = pathDirectoryOrigen + name;
+                if (File.Exists(pathFilesDestiny))
+                {
+                    File.Delete(pathFilesDestiny);
+                }
+                else
+                {
+                    File.Create(pathFilesDestiny);
+                } 
+            }
+
+            var files = Directory.GetFiles(pathDirectoryOrigen);
+            foreach(var file in files)
+            {
+                Console.WriteLine(file);
+            }
+
+            //PATH 
+            var fileName = Path.GetFileName(pathOrigen);
+            var extension = Path.GetExtension(pathOrigen);
+            Console.WriteLine("el nombre es {0} y la extension es {1}",fileName, extension);
 
             Console.ReadKey();
         }
