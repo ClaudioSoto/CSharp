@@ -1,8 +1,11 @@
 ﻿using BasicCSharp.Ejercicios1;
 using BasicCSharp.Ejercicios2;
 using BasicCSharp.Ejercicios3;
+using BasicCSharp.Ejercicios4;
+using BasicCSharp.Ejercicios5;
 using System;
 using System.IO;
+using System.Text;
 
 namespace BasicCSharp
 {
@@ -180,6 +183,36 @@ namespace BasicCSharp
             var fileName = Path.GetFileName(pathOrigen);
             var extension = Path.GetExtension(pathOrigen);
             Console.WriteLine("el nombre es {0} y la extension es {1}",fileName, extension);
+
+            //EJERCICIOS 4
+            var ejeciciosCuatro = new EjeciciosFour();
+            ejeciciosCuatro.WordsCounterFromFile(pathOrigen);
+            ejeciciosCuatro.LongestWordInFile(pathOrigen);
+
+            //STRINGS
+            var stringBuilder = new StringBuilder();
+            stringBuilder.Append('+', 10);
+            stringBuilder.AppendLine();
+            stringBuilder.AppendLine("Hello");
+            stringBuilder.Append('+', 10);
+            Console.WriteLine(stringBuilder);
+
+            //EJERCICIOS 5
+            var ejercicios5 = new EjerciciosFive();
+            ejercicios5.ConsecutiveNumber("1-2-3-4-5-6");
+            ejercicios5.ConsecutiveNumber("1-2-3-5-4-6");
+            ejercicios5.ConsecutiveNumber("1-2-3-4-5-9");
+            ejercicios5.Duplicates("1-2-3-4-5-6");
+            ejercicios5.Duplicates("1-2-3-4-4-6");
+            ejercicios5.Duplicates("1-6-3-4-4-6");
+            ejercicios5.ValidTime("12:23");
+            ejercicios5.ValidTime("00:59");
+            ejercicios5.ValidTime("24:60");
+            ejercicios5.ValidTime("240:600");
+            ejercicios5.PascalWords("claudio soto");
+            ejercicios5.PascalWords("Claudio Soto");
+            ejercicios5.PascalWords("cLAUDIO sOTO");
+            ejercicios5.PascalWords("cLaUdIo sOtO");
 
             Console.ReadKey();
         }
